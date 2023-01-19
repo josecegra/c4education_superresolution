@@ -16,6 +16,7 @@ RUN pip install Flask
 
 RUN git clone https://github.com/joseed-europeana/image-super-resolution.git
 RUN python3 image-super-resolution/setup.py install
+EXPOSE 8888
 
 COPY . /code
 CMD python3 api.py

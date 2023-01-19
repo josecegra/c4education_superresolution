@@ -15,7 +15,7 @@ if __name__ == '__main__':
     parser.add_argument("--output", help="path to output image")
     args = parser.parse_args()
 
-    api = SuperResAPI(f"http://0.0.0.0:5050/srapi")
+    api = SuperResAPI(f"http://localhost:8888/srapi")
     response = api.enhance(args.input,args.output)
 
     print(response)

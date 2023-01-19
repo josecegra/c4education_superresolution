@@ -10,7 +10,7 @@ from ISR.models import RDN, RRDN
 if __name__=="__main__":
 
     endpoint_name = 'srapi'
-    port = 5050
+    port = 8888
     host = '0.0.0.0'
 
     model = RDN(weights='noise-cancel')
