@@ -14,7 +14,7 @@ RUN apt-get install -y python3-pip
 RUN pip install fire
 RUN pip install Flask
 
-RUN git clone https://github.com/joseed-europeana/image-super-resolution.git
+RUN git clone https://github.com/josecegra/image-super-resolution.git
 RUN python3 image-super-resolution/setup.py install
 EXPOSE 8888
 
